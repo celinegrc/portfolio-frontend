@@ -23,7 +23,7 @@
     {
 		"id": "node",
 		"title": "Node.js",
-		"cover": "http://localhost:3000/images/node.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/node.svg"
 	}
 		
 ]
