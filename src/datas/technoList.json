@@ -3,22 +3,22 @@
 	{
 		"id": "html",
 		"title": "HTML 5",
-		"cover": "http://localhost:3000/images/html5.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/html5.svg"
 	},
     {
 		"id": "css",
 		"title": "CSS 3",
-		"cover": "http://localhost:3000/images/css3.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/css3.svg"
 	},
     {
 		"id": "javascript",
 		"title": "Javascript",
-		"cover": "http://localhost:3000/images/js.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/js.svg"
 	},
     {
 		"id": "react",
 		"title": "React.js",
-		"cover": "http://localhost:3000/images/react.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/react.svg"
 	},
     {
 		"id": "node",

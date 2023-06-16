@@ -3,21 +3,21 @@
 	{
 		"id": "github",
 		"title": "GitHub",
-		"cover": "http://localhost:3000/images/github.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/github.svg"
 	},
     {
 		"id": "figma",
 		"title": "Figma",
-		"cover": "http://localhost:3000/images/figma.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/figma.svg"
 	},
     {
 		"id": "vscode",
 		"title": "VSCode",
-		"cover": "http://localhost:3000/images/vsc.png"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/vsc.png"
 	},
     {
 		"id": "trello",
 		"title": "Trello",
-		"cover": "http://localhost:3000/images/trello_logo.svg"
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/trello_logo.svg"
 	}
 ]
