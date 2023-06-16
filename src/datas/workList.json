@@ -3,7 +3,7 @@
 	{
 		"id": "booki",
 		"title": "Booki",
-		"cover": "http://localhost:3000/images/booki.webp",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/booki.webp",
 		"link": "https://celinegrc.github.io/booki-p2/",
 		"linkText" :"Voir le site",
 		"mission" : "Intégrer une maquette de page d'accueil",
@@ -15,7 +15,7 @@
 	{
 		"id": "grimoire",
 		"title": "Le vieux grimoire",
-		"cover": "http://localhost:3000/images/mon_vieux_grimoire.jpg",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/mon_vieux_grimoire.jpg",
 		"link": "https://github.com/celinegrc/P7-grimoire",
 		"linkText" :"Voir le code",
 		"mission" : "Développer le backend d'une appli de notation de livres",
@@ -30,7 +30,7 @@
 	{
 		"id": "bluel",
 		"title": "Sophie Bluel",
-		"cover": "http://localhost:3000/images/sophie_bluel.webp",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/sophie_bluel.webp",
 		
 		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript",
 		"linkText" :"Voir le code",
@@ -44,7 +44,7 @@
 	{
 		"id": "kasa",
 		"title": "Kasa",
-		"cover": "http://localhost:3000/images/kasa.webp",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/kasa.webp",
 		"description": "React React Router",
 		"link": "https://snazzy-gnome-05b6e8.netlify.app/",	
 		"linkText" :"Voir le site",
@@ -56,7 +56,7 @@
 	},
 	{"id": "carducci",
 	"title": "Nina Carducci",
-	"cover": "http://localhost:3000/images/nina_carducci.webp",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/nina_carducci.webp",
 	"link": "https://celinegrc.github.io/P5-NinaCarducci/",
 	"linkText" :"Voir le site",
 	"mission" : "Débugger et optimiser un site",
