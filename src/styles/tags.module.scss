@@ -1,0 +1,15 @@
+@use "./mixins" ;
+
+.tags{
+   @include mixins.button;
+   padding:5px 15px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width : 767px){
+   .tags{
+      font-size: 14px;
+      padding : 3px 10px;
+   }
+}
+

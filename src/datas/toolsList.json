@@ -1,0 +1,23 @@
+[
+
+	{
+		"id": "github",
+		"title": "GitHub",
+		"cover": "http://localhost:3000/images/github.svg"
+	},
+    {
+		"id": "figma",
+		"title": "Figma",
+		"cover": "http://localhost:3000/images/figma.svg"
+	},
+    {
+		"id": "vscode",
+		"title": "VSCode",
+		"cover": "http://localhost:3000/images/vsc.png"
+	},
+    {
+		"id": "trello",
+		"title": "Trello",
+		"cover": "http://localhost:3000/images/trello_logo.svg"
+	}
+]

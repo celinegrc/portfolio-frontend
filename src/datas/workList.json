@@ -1,0 +1,73 @@
+[
+
+	{
+		"id": "booki",
+		"title": "Booki",
+		"cover": "http://localhost:3000/images/booki.webp",
+		"link": "https://celinegrc.github.io/booki-p2/",
+		"linkText" :"Voir le site",
+		"mission" : "Intégrer une maquette de page d'accueil",
+		"tags" : [
+			"HTML 5",
+			"CSS 3"
+		]
+	},
+	{
+		"id": "grimoire",
+		"title": "Le vieux grimoire",
+		"cover": "http://localhost:3000/images/mon_vieux_grimoire.jpg",
+		"link": "https://github.com/celinegrc/P7-grimoire",
+		"linkText" :"Voir le code",
+		"mission" : "Développer le backend d'une appli de notation de livres",
+		"tags" : [
+			"Node.js",
+			"Express.js",
+			"Mongo DB",
+			"API"
+		]
+		
+	},
+	{
+		"id": "bluel",
+		"title": "Sophie Bluel",
+		"cover": "http://localhost:3000/images/sophie_bluel.webp",
+		
+		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript",
+		"linkText" :"Voir le code",
+		"mission" : "Créer une page web dynmique avec javascript",
+		"tags" : [
+			"Javascript",
+			"API"
+		]
+
+	},
+	{
+		"id": "kasa",
+		"title": "Kasa",
+		"cover": "http://localhost:3000/images/kasa.webp",
+		"description": "React React Router",
+		"link": "https://snazzy-gnome-05b6e8.netlify.app/",	
+		"linkText" :"Voir le site",
+		"mission" : "Développer le frontend d'une appli de location de logements",
+		"tags" : [
+			"React",
+			"React router"
+		]	
+	},
+	{"id": "carducci",
+	"title": "Nina Carducci",
+	"cover": "http://localhost:3000/images/nina_carducci.webp",
+	"link": "https://celinegrc.github.io/P5-NinaCarducci/",
+	"linkText" :"Voir le site",
+	"mission" : "Débugger et optimiser un site",
+	"tags" : [
+		"Débug",
+		"Audit",
+		"Wave",
+		"SEO"
+	]
+		
+		
+	}
+		
+]

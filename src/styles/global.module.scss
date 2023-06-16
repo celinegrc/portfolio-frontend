@@ -1,0 +1,17 @@
+#root {
+    width:100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    :root {
+        --hover: black;
+      }
+}
+  
+body {
+    box-sizing: border-box;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 0;
+}
+
+

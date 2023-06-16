@@ -1,0 +1,23 @@
+.form_container{
+    max-width:800px;
+    margin:0 auto;
+    h1{
+        font-size: 35px;
+    }
+    p{
+        text-align: center;
+        font-size: 20px;
+    }
+    a{
+        color: #000000;
+        text-underline-offset: 5px;
+
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .form_container{
+        width:80%;
+    }
+}

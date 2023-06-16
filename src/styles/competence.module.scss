@@ -1,0 +1,222 @@
+@use "./mixins" ;
+
+@keyframes pulse-image{
+    0% {
+      scale :(1.2);
+    }
+    50% {
+        scale :(1);
+    }
+    100% {
+        scale :(1.2);
+    }
+}
+
+@keyframes growUp {
+    0% {
+      height:0px;
+    }
+    100% {
+        height:75px;
+    }
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arrow {
+    width:20px;
+    animation: pulse-image 1s infinite;
+}
+
+.h2_competence{
+    font-size:30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:mixins.$color-orange;
+    text-decoration-thickness: 2px;
+	text-underline-offset: 15px;  
+}
+
+.presentation_title {
+    cursor: pointer;
+}
+
+.presentation_title{
+    @include mixins.flex-center;
+    flex-direction: column;
+}
+
+.competence_page_container{
+    max-width:1100px;
+    margin: 50px auto;
+}
+
+.presentation.inactive {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 20px 50px 20px;
+    max-height: 0; 
+    overflow: hidden;  
+}
+
+.presentation {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 20px 20px 50px 20px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 2s ease;
+}
+
+.presentation.active {
+    max-height: 1000px; 
+    opacity: 1;
+    transition: max-height 2s ease, opacity 1s ease;
+}
+
+.orange_span{
+    color: mixins.$color-orange;
+}
+
+.competence_great_container{
+    animation: slideIn 0.8s ease forwards;
+    display: flex;
+    flex-wrap: wrap;
+    width:95%;
+    justify-content: space-around;;
+    align-items: baseline;
+    margin:100px 0; 
+}
+
+.competence_container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techno{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo_container{
+    animation: growUp 0.8s ease forwards;
+}
+
+.logo_container img{
+    width:auto;
+    height:100%;
+    object-fit:cover;
+}
+
+.competence_list{
+    font-size: 18px;
+    line-height:30px;
+    list-style: circle;
+}
+
+.formation_container{
+    background-color:rgba(92,209,201,0.1);
+    width:70%;
+    margin:50px auto;
+    padding:15px 30px;
+
+    div {
+        font-size: 20px;
+        text-align: center;
+        @include mixins.flex-center;
+        flex-direction: column;
+        border-radius: 0;
+        width: 50%;
+        margin: 0 auto;
+        border: solid 2px mixins.$color-orange;
+        border-radius :10px;
+        padding:5px; 
+         
+        &:hover {
+          cursor: pointer; 
+          img {
+            animation: pulse-image 1s infinite; 
+          }
+        }
+        
+        img {
+            width:20px;
+            margin-bottom: 5px;
+           
+        }
+        
+        p {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }       
+}
+
+.formation_title{
+    font-size: 25px;
+}
+
+.oc_list{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.oc_list.active{
+    max-height: 1000px; /* Valeur suffisamment grande pour afficher tout le contenu */
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+@media screen and (max-width: 667px){
+
+    .presentation{
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 20px 20px 50px 20px;
+    }
+    
+    .competence_great_container{
+        margin:50px 0; 
+    }
+    
+    .logo_container{
+        height:55px;
+    }
+
+    .techno{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .formation_container{
+        width:90%;
+        margin:50px auto;
+        padding:15px 30px;
+    
+            p{
+                font-size:18px;
+            }
+            div{
+                width:90%;
+            }
+    }
+
+    @keyframes growUp {
+        0% {
+          height:0px;
+        }
+        100% {
+            height:55px;
+        }
+      }
+    
+}

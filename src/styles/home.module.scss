@@ -1,0 +1,108 @@
+ @use "./mixins" ;
+
+h1{
+    font-size:80px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h2_home{
+    font-size:30px;
+    line-height: 50px;
+    text-align:center;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home_container{
+    height:80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+}
+
+.intro_container{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button{
+    @include mixins.button;
+    font-size: 24px;
+    font-weight:600;
+    margin-top:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition : all 0.3s;
+}
+
+.button:hover {
+    border-radius: 5px;
+    scale : 1.03;
+    box-shadow: 8px 5px 2px  lighten(mixins.$color-orange,20%);
+}
+
+
+
+
+
+.intro_container_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.blink_cursor{
+    @include mixins.blink-cursor;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+@media screen and (max-width: 767px){
+
+    h1{
+        font-size: 40px;
+        margin : 0 20px 25px 20px;
+    }
+    .h2_home{
+        font-size:24px;
+        line-height: 30px;
+        margin: 20px;
+    }
+
+    .button{
+        font-size: 18px;
+        font-weight:500;
+        margin: 10px 0 30px 0;;       
+    }
+
+    .home_container { 
+        justify-content: flex-start;
+
+    }
+    .intro_container{
+        flex-direction: column;
+    }
+    
+
+}

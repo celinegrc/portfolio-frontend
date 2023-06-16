@@ -1,0 +1,29 @@
+[
+
+	{
+		"id": "html",
+		"title": "HTML 5",
+		"cover": "http://localhost:3000/images/html5.svg"
+	},
+    {
+		"id": "css",
+		"title": "CSS 3",
+		"cover": "http://localhost:3000/images/css3.svg"
+	},
+    {
+		"id": "javascript",
+		"title": "Javascript",
+		"cover": "http://localhost:3000/images/js.svg"
+	},
+    {
+		"id": "react",
+		"title": "React.js",
+		"cover": "http://localhost:3000/images/react.svg"
+	},
+    {
+		"id": "node",
+		"title": "Node.js",
+		"cover": "http://localhost:3000/images/node.svg"
+	}
+		
+]

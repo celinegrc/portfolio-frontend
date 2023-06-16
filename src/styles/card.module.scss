@@ -1,0 +1,173 @@
+@use "./mixins" ;
+
+*{
+    box-sizing: border-box;
+}
+
+.card_container{
+    width:100%;
+    height:300px;
+    position : relative;
+  
+}
+
+
+.card{
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    width:100%;
+    height:100%;
+    position: absolute;
+    transition: transform 800ms;
+    transform-style : preserve-3d;
+
+        &:hover{
+            transform: rotateY(180deg);
+        }
+}
+
+
+.side{
+    width:100%;
+    height:100%;
+    padding:8px;
+    position: absolute;
+    backface-visibility: hidden;
+
+        &.side_front {
+            @include mixins.flex-center;
+            flex-direction: column;
+            z-index: 1;
+
+                &:hover{
+                    cursor: pointer;
+                }
+        }
+    
+        &.side_back {
+            transform: rotateY(180deg);
+            
+                &:hover{
+                    cursor: default;
+                }
+        }
+}
+
+
+.card_link{
+    @include mixins.link;
+    @include mixins.button;
+    color: #ffffff;
+    font-weight: 600;
+    transition:all .3s;
+        img{
+            height:15px;
+            margin-right:5px;
+        }
+        &:hover{
+            scale : 1.03;
+            box-shadow: 8px 5px 2px  lighten(mixins.$color-orange,20%);
+        }
+}
+
+.card_link_container{
+    @include mixins.flex-center;
+    padding: 5px 0 15px 0;
+    margin:0 auto;
+    width: 80%;
+    position: absolute;
+    inset : auto 0 0 0;
+}
+
+.card_image{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 2px;
+    border-radius: 8px 8px 0 0;
+    width:100%;
+    height:80%;
+    object-fit: cover;
+    object-position: top;
+    position:relative;
+}
+
+li{
+    @include mixins.li
+}
+
+.mission{
+    @include mixins.flex-center;
+    text-align: center;
+    width:95%;
+    font-size:20px;
+    padding: 0 15px;
+    height:45%;
+    padding-bottom:5px;
+    line-height:30px;  
+}
+
+
+.card_title{
+    width:100%;
+    color: white;
+    background-color: mixins.$color-orange;
+    text-align: center;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     h2{
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+}
+
+.tags_container{
+    @include mixins.flex-center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:25%;
+    width:80%;
+    padding-top:5px;
+    border-top: 1px solid grey;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .card_container{
+        height:220px;
+    }
+
+    .mission{
+        font-size:16px;
+        padding: 0 15px;
+        height:45%;
+        padding-bottom:5px;
+        line-height:25px;
+        padding: 0px; 
+    }
+    
+    .card_title {
+        height: 25%;
+            h2 {
+                font-size: 20px;
+            }
+
+    }
+
+    .tags_container{
+        height:30%;
+    }
+
+    .card_link_container{
+        padding-bottom:10px;
+    }
+
+    .card_link {
+        padding: 5px 7px;
+    }
+
+    .card_link span{
+        font-size:15px;
+    }
+}

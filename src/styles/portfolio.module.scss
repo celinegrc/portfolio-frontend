@@ -1,0 +1,75 @@
+@use "./mixins" ;
+
+
+.portfolio_page{
+    background-color:rgba(92,209,201,0.05);
+    margin:0;
+}
+
+h1{
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.card_list{
+    box-sizing: border-box;
+    padding-left:0;
+    width:95%;
+    height:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:30px;
+    margin: 0 auto;
+}
+
+.card_great_container{
+    max-width:1100px;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+
+.slide_in{
+    width: 300px;
+    animation: slideIn 0.8s ease forwards;
+}
+
+.blink_cursor{
+  @include mixins.blink-cursor;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+  
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-200%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+  @media screen and (max-width: 767px){
+    .slide_in{
+      width : 220px;
+    }
+  }
