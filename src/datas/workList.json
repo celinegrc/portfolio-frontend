@@ -65,9 +65,19 @@
 		"Audit",
 		"Wave",
 		"SEO"
-	]
-		
-		
+		]	
+	},
+	{"id": "mealplanner",
+	"title": "Meal Planner",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/meal_planner.webp",
+	"link": "https://celinegrc.github.io/MealPlanner/",
+	"linkText" :"Voir le site",
+	"mission" : "Application de plannification de menus",
+	"tags" : [
+		"React",
+		"React PDF",
+		"Appel API"
+		]
 	}
 		
 ]
