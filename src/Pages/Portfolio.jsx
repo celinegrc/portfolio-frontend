@@ -1,6 +1,7 @@
 import Card from "../Components/Card";
 import workList from "../datas/workList.json"
 import styles from "../styles/portfolio.module.scss"
+import Footer from "../Components/Footer";
 
 export default function Portfolio(){
   console.log(workList)
@@ -18,6 +19,7 @@ export default function Portfolio(){
           ))}
         </ul>
         </div>
+        <Footer />
       </div>
   )
 }

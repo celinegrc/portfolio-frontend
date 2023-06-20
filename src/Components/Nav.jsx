@@ -1,29 +1,98 @@
-import styles from '../styles/nav.module.scss';
-import {NavLink} from "react-router-dom";
+import styles from '../styles/nav.module.scss'
+import {NavLink} from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope }  from '@fortawesome/free-solid-svg-icons'
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useEffect } from 'react'
 
-export default function Nav(){
-    return(
-        
-            <nav className={styles.nav}>
-              
-                <NavLink  to ="/" className={styles.nav_link_name}>Céline Gourc </NavLink>
-                
-                <div className = {styles.nav_items_container}>
-                    <NavLink  to ="/" className={({ isActive }) => (isActive ? styles.nav_link_active : styles.nav_link_inactive)}>
-                        Accueil
-                    </NavLink>
-                    <NavLink to ="/competences" className={({ isActive }) => (isActive ? styles.nav_link_active : styles.nav_link_inactive)}>
-                        Compétences
-                        </NavLink>
-                    <NavLink to ="/portfolio" className={({ isActive }) => (isActive ? styles.nav_link_active : styles.nav_link_inactive)}>
-                        Réalisations
-                        </NavLink>
-                    <NavLink to ="/contact" className={({ isActive }) => (isActive ? styles.nav_link_active : styles.nav_link_inactive)}>
-                        Me contacter
-                    </NavLink>
-                </div>
-            </nav>
-        
+
+export default function Nav() {
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth)
+      }
+  
+      window.addEventListener('resize', handleResize)
+  
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
+    }, [])
+  
+    return (
+      <nav className={styles.nav}>
+        <NavLink to="/" className={styles.nav_link_name}>
+          Céline Gourc
+        </NavLink>
+  
+        <div className={styles.nav_items_container}>
+          {windowWidth < 550 ? (
+            <>
+              <NavLink  to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                    <FontAwesomeIcon icon={faHouse} />
+              </NavLink>
+
+              <NavLink to="/competences" className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                    <FontAwesomeIcon icon={faScrewdriverWrench} />
+              </NavLink>
+
+              <NavLink to="/portfolio" className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                    <FontAwesomeIcon icon={faLaptopCode} />
+              </NavLink>
+
+              <NavLink to="/contact" className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                <FontAwesomeIcon icon={faEnvelope} />
+              </NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                Accueil
+              </NavLink>
+
+              <NavLink
+                to="/competences"
+                className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                Compétences
+              </NavLink>
+
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+                Réalisations
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? styles.nav_link_active : styles.nav_link_inactive
+                }>
+               Contact
+              </NavLink>
+            </>
+          )}
+        </div>
+      </nav>
     )
-}
-
+  }

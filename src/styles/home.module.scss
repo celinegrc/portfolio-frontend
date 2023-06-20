@@ -1,4 +1,4 @@
- @use "./mixins" ;
+ @use "./mixins-variables" ;
 
 h1{
     font-size:80px;
@@ -11,28 +11,31 @@ h1{
     line-height: 50px;
     text-align:center;
     margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: mixins-variables.$font-family;
 }
 
 .home_container{
-    height:80vh;
+    @include mixins-variables.flex-center-column;
+    justify-content: space-between;
+    height:90vh;
     max-width: 1200px;
     margin: 0 auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     z-index:1;
 }
 
+.content_container{
+    @include mixins-variables.flex-center-column;
+    margin-top:50px;
+}
+
+
 .intro_container{
-    display:flex;
-    justify-content: center;
+    @include mixins-variables.flex-center;
     align-items: flex-start;
 }
 
 .button{
-    @include mixins.button;
+    @include mixins-variables.button;
     font-size: 24px;
     font-weight:600;
     margin-top:50px;
@@ -43,23 +46,16 @@ h1{
 .button:hover {
     border-radius: 5px;
     scale : 1.03;
-    box-shadow: 8px 5px 2px  lighten(mixins.$color-orange,20%);
+    box-shadow: 8px 5px 2px  lighten(mixins-variables.$color-orange,20%);
 }
 
-
-
-
-
 .intro_container_text{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include mixins-variables.flex-center-column;
 }
 
 
 .blink_cursor{
-    @include mixins.blink-cursor;
+    @include mixins-variables.blink-cursor;
 }
 
 @keyframes blink {
@@ -77,13 +73,13 @@ h1{
 }
 
 
-
 @media screen and (max-width: 767px){
 
     h1{
         font-size: 40px;
         margin : 0 20px 25px 20px;
     }
+
     .h2_home{
         font-size:24px;
         line-height: 30px;
@@ -97,12 +93,12 @@ h1{
     }
 
     .home_container { 
-        justify-content: flex-start;
+        justify-content: space-between;
 
     }
+
     .intro_container{
         flex-direction: column;
     }
     
-
 }

@@ -1,7 +1,7 @@
-@use "./mixins" ;
+@use "./mixins-variables" ;
 
 .tags{
-   @include mixins.button;
+   @include mixins-variables.button;
    padding:5px 15px;
    font-family: 'Montserrat', sans-serif;
 }

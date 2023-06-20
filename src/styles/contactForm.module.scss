@@ -1,19 +1,16 @@
-@use './mixins';
+@use './mixins-variables';
 
 form{
+    @include mixins-variables.flex-center-column;
+    align-items: flex-start;
     max-width: 700px;
     margin:40px auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-
     padding: 25px;
     box-shadow: 0px 0px 5px 0px rgb(197, 179, 179);
-
 }
 
 .button_submit{
-    @include mixins.button;
+    @include mixins-variables.button;
     width: 150px;
     align-self:center;
     font-size:18px;
@@ -24,12 +21,12 @@ form{
    cursor:pointer;
    border-radius: 5px;
    scale : 1.03;
-   box-shadow: 8px 5px 2px  lighten(mixins.$color-orange,10%);
+   box-shadow: 8px 5px 2px  lighten(mixins-variables.$color-orange,10%);
 }
 
 textarea {
     width:100%;
-    min-height:200px;
+    height:200px;
     margin-bottom: 20px;
 }
 

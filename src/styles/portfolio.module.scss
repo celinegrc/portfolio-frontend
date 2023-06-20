@@ -1,18 +1,11 @@
-@use "./mixins" ;
-
+@use "./mixins-variables" ;
 
 .portfolio_page{
     background-color:rgba(92,209,201,0.05);
     margin:0;
 }
 
-h1{
-    margin-top: 0;
-    padding-top: 20px;
-}
-
 .card_list{
-    box-sizing: border-box;
     padding-left:0;
     width:95%;
     height:auto;
@@ -35,7 +28,7 @@ h1{
 }
 
 .blink_cursor{
-  @include mixins.blink-cursor;
+  @include mixins-variables.blink-cursor;
 }
 
 @keyframes blink {
@@ -53,7 +46,6 @@ h1{
 }
 
   
-
 @keyframes slideIn {
     0% {
       transform: translateX(-200%);
@@ -65,8 +57,6 @@ h1{
       opacity: 1;
     }
   }
-  
-
 
   @media screen and (max-width: 767px){
     .slide_in{

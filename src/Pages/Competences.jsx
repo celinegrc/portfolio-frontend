@@ -2,7 +2,8 @@ import styles from "../styles/competence.module.scss";
 import { useState } from "react";
 import technoList from "../datas/technoList.json";
 import toolsList from "../datas/toolsList.json";
-import arrow from "../images/arrow_orange.png"
+import arrow from "../images/arrow_orange.png";
+import Footer from "../Components/Footer";
 
 
 export default function Competences(){
@@ -24,7 +25,7 @@ export default function Competences(){
             <section className={styles.presentation_container}>
                 <div onClick={handleClickIntro} className = {styles.presentation_title}>
                     <h2  className = {styles.h2_competence}>Qui suis-je <span className ={styles.orange_span}> ?</span></h2>
-                    <img src ={arrow} alt ="fleche" className={styles.arrow}/>
+                    <img src ={arrow} alt ="fleche" className={isOpenIntro? `${styles.arrow} ${styles.active}` : styles.arrow}/>
                 </div>
                 
                 <div className={isOpenIntro ? `${styles.presentation} ${styles.active}` : styles.presentation}>
@@ -44,14 +45,14 @@ export default function Competences(){
 
             <h2  className = {styles.h2_competence}>Mes technos</h2>
             
-            <div className={styles.competence_great_container}>
+            <div className={styles.technos_wrapper}>
                 {technoList.map(({id, cover, title}) => ( 
                     <li key={id} > 
-                        <div className={styles.competence_container}>
+                        <div className={styles.techno_container}>
                                 <div className={styles.logo_container}>
                                     <img src = {cover} alt=''/>
                                 </div>
-                                <p className={styles.techno}>{title}</p>
+                                <p className={styles.techno_name}>{title}</p>
                         </div>
                     </li>  
                 ))}              
@@ -59,14 +60,14 @@ export default function Competences(){
 
             <h2  className = {styles.h2_competence}>Mes outils</h2>
             
-            <div className={styles.competence_great_container}>
+            <div className={styles.tools_wrapper}>
                 {toolsList.map(({id, cover, title}) => ( 
                     <li key={id} > 
-                        <div className={styles.competence_container}>
+                        <div className={styles.tool_container}>
                                 <div className={styles.logo_container}>
                                     <img src = {cover} alt=''/>
                                 </div>
-                                <p className={styles.techno}>{title}</p>
+                                <p className={styles.tool_name}>{title}</p>
                         </div>
                     </li>  
                 ))} 
@@ -78,7 +79,7 @@ export default function Competences(){
                 <h3 className={styles.formation_title}> Formation de développeur Web chez Openclassrooms </h3>
                 <div onClick={handleClickFormation}>
                     <p>Voir les compétences acquises</p>
-                    <img src = {arrow} alt="fleche"  />
+                    <img src = {arrow} alt="fleche" className={isOpenFormation ? `${styles.arrow} ${styles.active}` : styles.arrow} />
                 </div>
                 <ul  className={isOpenFormation ? `${styles.oc_list} ${styles.active}` : styles.oc_list}>
                     <li className={styles.competence_list}>Intégrer du contenu conformément à une maquette avec HTML et CSS</li>
@@ -98,6 +99,7 @@ export default function Competences(){
                     <li className={styles.competence_list}>Baccalauréat Economique et social</li>
                 </ul>
             </div>
+            <Footer />
         </div>
     )
 }

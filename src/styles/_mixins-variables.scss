@@ -3,6 +3,8 @@ $color-orange : #ff920b;
 
 $color-white : #f2f2f2;
 
+$font-family : 'Montserrat', sans-serif;
+
 $color-light-blue : rgba(92,209,201,0.2);
 
 @mixin link {
@@ -13,6 +15,7 @@ $color-light-blue : rgba(92,209,201,0.2);
 @mixin li{
   list-style: none;
 }
+
 @mixin blink-cursor{
   color:$color-orange;
   animation: blink 1s infinite;
@@ -24,6 +27,10 @@ $color-light-blue : rgba(92,209,201,0.2);
   font-weight: 600;
   margin-right: 25px;
   font-size: 18px;
+    @media screen and (max-width :767px){
+        margin-top:5px;
+        font-weight: 500;
+    }
 }
 
 @mixin button {
@@ -35,14 +42,20 @@ $color-light-blue : rgba(92,209,201,0.2);
 	border: none;
 	text-align: center;
 	box-shadow: 0px 0px 2px  rgb(124, 118, 118);
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: $font-family;
 }
 
-@mixin flex_center{
+@mixin flex-center{
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+@mixin flex-center-column{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
 }
 
 @mixin orange-span{

@@ -6,7 +6,6 @@ import Portfolio from "./Pages/Portfolio";
 import Error from "./Pages/Error";
 import Nav from "./Components/Nav";
 import Confirmation from "./Pages/Confirmation";
-import LoginForm from "./Components/LoginForm"
 
 export const router = createBrowserRouter([
     {
@@ -65,15 +64,6 @@ export const router = createBrowserRouter([
         <>
         <Nav />
         <Confirmation />
-        </>
-      )
-    },
-    {
-      path: '/login',
-      element: (
-        <>
-        <Nav />
-        <LoginForm />
         </>
       )
     }
