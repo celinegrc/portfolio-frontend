@@ -1,13 +1,15 @@
 import {useState} from "react"
 import styles from "../styles/contactForm.module.scss"
 import { Navigate } from 'react-router-dom'
-
+import Loader from "./Loader"
 
 export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [object, setObject] = useState('')
   const [message, setMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(false);
+
 
   const [showError, setShowError] = useState(false)
   const [showErrorEmail, setShowErrorEmail] = useState(false)
@@ -24,11 +26,14 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setShowErrorEmail(false)
+    setIsLoading(true)
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   if (!emailRegex.test(email)) {
     setShowErrorEmail(true)
-    return;
+    setIsLoading(false)
+    return
+    
   }
 
     try  {
@@ -52,6 +57,8 @@ export default function ContactForm() {
       }
     } catch (error) {
       setShowError(true)
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -90,10 +97,11 @@ export default function ContactForm() {
         onChange={(e) => setMessage(e.target.value)} 
         required
       />
+      {isLoading && <div className= {styles.loader_container}><Loader /></div>} 
       {redirectToConfirmation && <Navigate to="/confirmation" />}
       {showError && <p className = {styles.error_message}> L'envoi du message a échoué. </p>}
       {showErrorEmail && <p className = {styles.error_message}> Mail invalide ! </p>}
       <button  className={styles.button_submit}>Envoyer</button>
     </form>
-  );
-};
+  )
+}

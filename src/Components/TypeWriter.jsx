@@ -15,7 +15,7 @@ useEffect(() => {
         }, 50)
     } 
 
-}, [index])
+}, [index, currentText, text])
  
  return (
     <span>{currentText}</span>
