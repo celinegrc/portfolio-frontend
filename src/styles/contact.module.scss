@@ -1,3 +1,5 @@
+@use './mixins-variables';
+
 .form_container{
     max-width:800px;
     margin:0 auto;
@@ -7,6 +9,7 @@
     p{
         text-align: center;
         font-size: 20px;
+        font-family: mixins-variables.$font-family;
     }
     a{
         color: #000000;

@@ -28,12 +28,14 @@ textarea {
     width:100%;
     height:200px;
     margin-bottom: 20px;
+    font-size:16px;
 }
 
 input{
     width:100%;
     height: 30px;
     margin-bottom: 8px;
+    font-size:16px;
 }
 
 label{
@@ -47,4 +49,13 @@ label{
 
 .loader_container{
     align-self: center;
+}
+
+.checkBox_container{
+     display:flex;
+     align-items: flex-start;
+     input{
+        width:30px;
+        height:auto;
+     }
 }

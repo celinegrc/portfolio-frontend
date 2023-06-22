@@ -6,6 +6,7 @@ import Portfolio from "./Pages/Portfolio";
 import Error from "./Pages/Error";
 import Nav from "./Components/Nav";
 import Confirmation from "./Pages/Confirmation";
+import Policy from "./Pages/Policy";
 
 export const router = createBrowserRouter([
     {
@@ -66,6 +67,14 @@ export const router = createBrowserRouter([
         <Confirmation />
         </>
       )
+    },
+    {
+      path: "/politique-de-confidentialite",
+      element:(
+        <>
+        <Nav />
+        <Policy />
+        </>
+      )
     }
   ])
-  
