@@ -64,7 +64,9 @@
         }
         &:hover{
             scale : 1.03;
-            box-shadow: 8px 5px 2px  lighten(mixins-variables.$color-orange,20%);
+            box-shadow: 4px 2px 8px lighten(mixins-variables.$color-orange,20%);
+            box-shadow: 4px 2px 8px white;
+            border-radius:18px;
         }
 }
 
@@ -102,7 +104,6 @@ li{
     padding-bottom:5px;
     line-height:30px; 
 }
-
 
 .card_title{
     @include mixins-variables.flex-center;

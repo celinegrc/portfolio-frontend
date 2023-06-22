@@ -3,8 +3,18 @@
 .portfolio_page{
     background-color:rgba(92,209,201,0.05);
     margin:0;
-}
 
+}
+.portfolio_github{
+  margin-top:40px;
+  font-family: mixins-variables.$font-family; 
+  font-size: 22px;
+  @include mixins-variables.flex-center;
+    img{
+      height: 30px;
+      margin-left:5px;
+    }
+}
 .card_list{
     padding-left:0;
     width:95%;

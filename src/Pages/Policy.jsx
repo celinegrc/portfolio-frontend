@@ -1,9 +1,9 @@
-import styles from "../styles/policy.module.scss"
+//import styles from "../styles/policy.module.scss"
 
 export default function Policy(){
     return(
 
-        <main className={styles.policy_container}>
+        {/*<main className={styles.policy_container}>
            <h1>Politique de confidentialité</h1>
 
                 <h2>1. Collecte des données personnelles sur le site</h2>
@@ -87,6 +87,6 @@ export default function Policy(){
                     Adresse : 1 route du pont, 50600 Virey
                 </adress>
         
-        </main>
+    </main>*/}
     )
 }

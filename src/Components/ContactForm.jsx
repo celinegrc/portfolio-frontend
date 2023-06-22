@@ -1,6 +1,6 @@
 import {useState} from "react"
 import styles from "../styles/contactForm.module.scss"
-import { Navigate, Link } from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import Loader from "./Loader"
 
 export default function ContactForm() {
@@ -98,14 +98,14 @@ export default function ContactForm() {
         required
       />
 
-      <div className={styles.checkBox_container}>
+     {/*<div className={styles.checkBox_container}>
         <input  required className ={styles.checkBox_container} type= "checkbox" />
         <label>En soumettant ce formulaire j'accepte que les données saisies soient utilisées afin d'être recontacté(e). 
           Aucune exploitation commerciale ne sera faite des données conservées. 
           Voir 
           <Link to ="/politique-de-confidentialite"> la politique de confidentialité </Link>.
         </label>
-      </div>
+  </div>*/}
 
       {isLoading && <div className= {styles.loader_container}><Loader /></div>} 
       {redirectToConfirmation && <Navigate to="/confirmation" />}

@@ -2,6 +2,7 @@
 
 .tags{
    @include mixins-variables.button;
+   box-shadow: none;
    padding:5px 15px;
    font-family: 'Montserrat', sans-serif;
 }
