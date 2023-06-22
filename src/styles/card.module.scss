@@ -30,6 +30,8 @@
     padding:8px;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateX(0deg);
 
         &.side_front {
             @include mixins-variables.flex-center-column;
