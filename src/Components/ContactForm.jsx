@@ -103,7 +103,7 @@ export default function ContactForm() {
         <label>En soumettant ce formulaire j'accepte que les données saisies soient utilisées afin d'être recontacté(e). 
           Aucune exploitation commerciale ne sera faite des données conservées. 
           Voir 
-          <Link to ="/politique-de-confidentialite">la politique de confidentialité </Link>.
+          <Link to ="/politique-de-confidentialite"> la politique de confidentialité </Link>.
         </label>
       </div>
 
