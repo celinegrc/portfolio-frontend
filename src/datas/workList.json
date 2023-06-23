@@ -3,7 +3,7 @@
 	{
 		"id": "booki",
 		"title": "Booki",
-		"cover": "http://localhost:3000/images/booki.webp",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/booki.webp",
 		"link": "https://celinegrc.github.io/booki-p2/",
 		"linkText" :"Voir le site",
 		"mission" : "Créez la page d'accueil d'une agence de voyage avec HTML & CSS.",
@@ -16,7 +16,7 @@
 	{
 		"id": "grimoire",
 		"title": "Le vieux grimoire",
-		"cover": "http://localhost:3000/images/mon_vieux_grimoire.jpg",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/mon_vieux_grimoire.jpg",
 		"link": "https://github.com/celinegrc/P7-grimoire",
 		"linkText" :"Voir le code",
 		"mission" : "Développer le backend d'un site de notation de livres.",
@@ -32,8 +32,7 @@
 	{
 		"id": "bluel",
 		"title": "Sophie Bluel",
-		"cover": "http://localhost:3000/images/sophie_bluel.webp",
-		
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/sophie_bluel.webp",
 		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript.",
 		"linkText" :"Voir le code",
 		"mission" : "Créer une page web dynmique avec javascript",
@@ -47,7 +46,7 @@
 	{
 		"id": "kasa",
 		"title": "Kasa",
-		"cover": "http://localhost:3000/images/kasa.webp",
+		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/kasa.webp",
 		"description": "React React Router",
 		"link": "https://snazzy-gnome-05b6e8.netlify.app/",	
 		"linkText" :"Voir le site",
@@ -60,7 +59,7 @@
 	},
 	{"id": "carducci",
 	"title": "Nina Carducci",
-	"cover": "http://localhost:3000/images/nina_carducci.webp",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/nina_carducci.webp",
 	"link": "https://celinegrc.github.io/P5-NinaCarducci/",
 	"linkText" :"Voir le site",
 	"mission" : "Débugger et optimiser le site d'un photographe.",
@@ -75,7 +74,7 @@
 	},
 	{"id": "mealplanner",
 	"title": "Meal Planner",
-	"cover": "http://localhost:3000/images/meal_planner.webp",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/meal_planner.webp",
 	"link": "https://celinegrc.github.io/MealPlanner/",
 	"linkText" :"Voir le site",
 	"mission" : "Application de plannification de menus.",
