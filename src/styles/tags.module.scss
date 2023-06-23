@@ -2,7 +2,7 @@
 
 .tags{
    @include mixins-variables.button;
-   box-shadow: none;
+   font-size:18px;
    padding:5px 15px;
    font-family: 'Montserrat', sans-serif;
 }
@@ -13,4 +13,3 @@
       padding : 3px 10px;
    }
 }
-

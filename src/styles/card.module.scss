@@ -3,7 +3,7 @@
 
 .card_container{
     width:100%;
-    height:300px;
+    height:370px;
     position : relative;
     perspective: 1000px;
     font-family: mixins-variables.$font-family; 
@@ -35,10 +35,11 @@
 
         &.side_front {
             @include mixins-variables.flex-center-column;
+            justify-content: space-between;
             z-index: 1;
 
                 &:hover{
-                    cursor: pointer;
+                    cursor: pointer;  
                 }
         }
     
@@ -47,6 +48,7 @@
             
                 &:hover{
                     cursor: default;
+
                 }
         }
 }
@@ -64,15 +66,13 @@
         }
         &:hover{
             scale : 1.03;
-            box-shadow: 4px 2px 8px lighten(mixins-variables.$color-orange,20%);
-            box-shadow: 4px 2px 8px white;
-            border-radius:18px;
+            box-shadow: 8px 5px 2px  lighten(mixins-variables.$color-orange,20%);
         }
 }
 
 .card_link_container{
     @include mixins-variables.flex-center;
-    padding: 5px 0 15px 0;
+    padding: 5px 0 20px 0;
     margin:0 auto;
     width: 80%;
     position: absolute;
@@ -95,22 +95,27 @@ li{
 }
 
 .mission{
-    @include mixins-variables.flex-center;
+   @include mixins-variables.flex-center-column;
+   
     text-align: center;
     width:95%;
     font-size:20px;
-    padding: 0 15px;
-    height:45%;
+    height:50%;
     padding-bottom:5px;
-    line-height:30px; 
+    line-height:30px;
+        p{
+            margin-bottom:0px;
+            margin-top:5px;
+        }
 }
+
 
 .card_title{
     @include mixins-variables.flex-center;
     width:100%;
     color: white;
     background-color: mixins-variables.$color-orange;
-    height:30%;
+    height:20%;
      h2{
         font-size: 25px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -131,17 +136,18 @@ li{
 
 @media screen and (max-width: 767px){
     .card_container{
-        height:220px;
+        height:300px;
     }
 
     .mission{
-        font-size:16px;
+        font-size:15px;
         line-height:25px;
-        padding: 0px; 
+        padding: 0px;
+        height: 55%;
     }
     
     .card_title {
-        height: 25%;
+        height: 20%;
             h2 {
                 font-size: 20px;
             }
@@ -151,9 +157,6 @@ li{
         height:30%;
     }
 
-    .card_link_container{
-        padding-bottom:10px;
-    }
 
     .card_link {
         padding: 5px 7px;

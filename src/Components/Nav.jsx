@@ -24,12 +24,12 @@ export default function Nav() {
     }, [])
   
     return (
-      <nav className={styles.nav}>
+      <header className={styles.header}>
         <NavLink to="/" className={styles.nav_link_name}>
           Céline Gourc
         </NavLink>
   
-        <div className={styles.nav_items_container}>
+        <nav className={styles.nav_items_container}>
           {windowWidth < 550 ? (
             <>
               <NavLink  to="/"
@@ -92,7 +92,7 @@ export default function Nav() {
               </NavLink>
             </>
           )}
-        </div>
-      </nav>
+        </nav>
+      </header>
     )
   }

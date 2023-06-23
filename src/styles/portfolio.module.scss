@@ -3,8 +3,8 @@
 .portfolio_page{
     background-color:rgba(92,209,201,0.05);
     margin:0;
-
 }
+
 .portfolio_github{
   margin-top:40px;
   font-family: mixins-variables.$font-family; 
@@ -15,6 +15,7 @@
       margin-left:5px;
     }
 }
+
 .card_list{
     padding-left:0;
     width:95%;
@@ -27,14 +28,14 @@
 }
 
 .card_great_container{
-    max-width:1100px;
+    max-width:1200px;
     margin:0 auto;
     padding-bottom: 50px;
 }
 
 .slide_in{
-    width: 300px;
-    animation: slideIn 0.8s ease forwards;
+  width: 350px;
+  animation: slideIn 0.8s ease forwards;
 }
 
 .blink_cursor{
@@ -70,6 +71,17 @@
 
   @media screen and (max-width: 767px){
     .slide_in{
-      width : 220px;
+      width : 260px;
     }
+    .portfolio_github{
+      margin-top:30px;
+      font-size: 18px;
+        img{
+          height: 25px;
+        }
+    }
+
+    .card_great_container{
+      padding-bottom: 20px;
+  }
   }
