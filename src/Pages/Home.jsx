@@ -13,7 +13,7 @@ export default function Home(){
                 <div className = {styles.intro_container}>
                     <div className = {styles.intro_container_text}>
                         <h2 className={styles.h2_home}>Je suis Céline,<br/> développeuse web junior.</h2>
-                        <Link to="/portfolio" className={styles.button}><TypeWriter text = " Voir mon portfolio " /></Link>
+                        <Link to="/portfolio" className={styles.button}><TypeWriter text = "Voir mon portfolio" /></Link>
                     </div>
                     <div className = {styles.image_container}>
                         <img src = './ordi_home.png' alt ="dessin d'un ordinateur portable" width="300px" height="336px"/>
