@@ -13,7 +13,12 @@
     img{
       height: 30px;
       margin-left:5px;
+      transition:  scale 0.5s;
+      &:hover{
+        scale:1.05;
+      }
     }
+    
 }
 
 .card_list{
