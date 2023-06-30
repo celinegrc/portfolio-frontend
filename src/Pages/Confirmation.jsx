@@ -7,7 +7,7 @@ export default function Confirmation() {
         <p className = {styles.thanks}>Merci !</p>
         <p>Votre message a été envoyé avec succès. </p>
             <p>Je vous répondrai dans les plus brefs délais. </p> 
-        <img src ={confirmation} alt =''/>
+        <img src ={confirmation} alt ="dessin d'ecran d'odinateur avec boite aux lettres"/>
         </div>
     )
 }

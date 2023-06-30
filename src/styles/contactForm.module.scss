@@ -14,6 +14,7 @@ form{
     width: 150px;
     align-self:center;
     font-size:18px;
+    font-weight:600;
     transition: scale .5s;
 }
 
@@ -43,7 +44,7 @@ label{
 }
 
 .error_message{
-    color:red;
+    color:rgb(243, 6, 6);
 }
 
 
@@ -51,11 +52,3 @@ label{
     align-self: center;
 }
 
-/*.checkBox_container{
-     display:flex;
-     align-items: flex-start;
-     input{
-        width:30px;
-        height:auto;
-     }
-}*/

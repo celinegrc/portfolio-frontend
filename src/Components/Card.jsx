@@ -30,7 +30,7 @@ export default function Card({id, cover, title, link, linkText, mission, problem
                         <div className={styles.card_link_container}>
 
                             <a  href={link} className={styles.card_link}>
-                                <img src = {linkIcon} alt=''/>
+                                <img src = {linkIcon} alt='Lien'/>
                                 <span>{linkText}</span>
                             </a>
                     </div>  

@@ -51,7 +51,7 @@ export default function Competences(){
                         <li key={id} > 
                             <div className={styles.techno_container}>
                                     <div className={styles.logo_container}>
-                                        <img src = {cover} alt=''/>
+                                    <img src={cover} alt={"logo de " + title} />
                                     </div>
                                     <p className={styles.techno_name}>{title}</p>
                             </div>
@@ -65,7 +65,7 @@ export default function Competences(){
                         <li key={id} > 
                             <div className={styles.tool_container}>
                                     <div className={styles.logo_container}>
-                                        <img src = {cover} alt=''/>
+                                    <img src={cover} alt={"logo de " + title} />
                                     </div>
                                     <p className={styles.tool_name}>{title}</p>
                             </div>
