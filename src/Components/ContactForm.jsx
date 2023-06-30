@@ -96,6 +96,7 @@ export default function ContactForm() {
         value={message} 
         onChange={(e) => setMessage(e.target.value)} 
         required
+        minLength={10}
       />
       {isLoading && <div className= {styles.loader_container}><Loader /></div>} 
       {redirectToConfirmation && <Navigate to="/confirmation" />}
