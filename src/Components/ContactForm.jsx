@@ -13,6 +13,7 @@ export default function ContactForm() {
 
   const [showError, setShowError] = useState(false)
   const [showErrorEmail, setShowErrorEmail] = useState(false)
+  const [showErrorMessage, setShowErrorMessage] = useState(false)
   const [redirectToConfirmation, setRedirectToConfirmation] = useState(false)
 
  function reset(){
@@ -34,6 +35,11 @@ export default function ContactForm() {
     setIsLoading(false)
     return
     
+  }
+  if (message.length < 10){
+    setShowErrorMessage(true)
+    setIsLoading(false)
+    return
   }
 
     try  {
@@ -92,7 +98,8 @@ export default function ContactForm() {
 
       <label htmlFor ="message">Message <span>*</span></label>
       <textarea  
-        id = "message" 
+        id = "message"
+        onFocus={() => setShowErrorMessage(false)} 
         value={message} 
         onChange={(e) => setMessage(e.target.value)} 
         required
@@ -102,6 +109,8 @@ export default function ContactForm() {
       {redirectToConfirmation && <Navigate to="/confirmation" />}
       {showError && <p className = {styles.error_message}> L'envoi du message a échoué. </p>}
       {showErrorEmail && <p className = {styles.error_message}> Mail invalide ! </p>}
+      {showErrorMessage && <p className = {styles.error_message}> 10 carcatères minimum </p>}
+      
       <button  className={styles.button_submit}>Envoyer</button>
     </form>
   )
