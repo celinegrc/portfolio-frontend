@@ -33,7 +33,7 @@
 		"id": "bluel",
 		"title": "Sophie Bluel",
 		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/sophie_bluel.webp",
-		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript.",
+		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript",
 		"linkText" :"Voir le code",
 		"mission" : "Créer une page web dynmique avec javascript",
 		"problematic": "Créer la page de connexion, la modale d'upload de travaux, la modale d'affichage des travaux.",
