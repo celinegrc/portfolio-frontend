@@ -2,6 +2,7 @@
 
 	{
 		"id": "booki",
+		"type": "Projets de formation",
 		"title": "Booki",
 		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/booki.webp",
 		"link": "https://celinegrc.github.io/booki-p2/",
@@ -15,6 +16,7 @@
 	},
 	{
 		"id": "grimoire",
+		"type": "Projets de formation",
 		"title": "Le vieux grimoire",
 		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/mon_vieux_grimoire.jpg",
 		"link": "https://github.com/celinegrc/P7-grimoire",
@@ -31,6 +33,7 @@
 	},
 	{
 		"id": "bluel",
+		"type": "Projets de formation",
 		"title": "Sophie Bluel",
 		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/sophie_bluel.webp",
 		"link": "https://github.com/celinegrc/P3-Portofolio-Javascript",
@@ -45,6 +48,7 @@
 	},
 	{
 		"id": "kasa",
+		"type": "Projets de formation",
 		"title": "Kasa",
 		"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/kasa.webp",
 		"description": "React React Router",
@@ -58,6 +62,7 @@
 		]	
 	},
 	{"id": "carducci",
+	"type": "Projets de formation",
 	"title": "Nina Carducci",
 	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/nina_carducci.webp",
 	"link": "https://celinegrc.github.io/P5-NinaCarducci/",
@@ -73,6 +78,7 @@
 		]
 	},
 	{"id": "mealplanner",
+	"type": "Projets perso",
 	"title": "Meal Planner",
 	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/meal_planner.webp",
 	"link": "https://celinegrc.github.io/MealPlanner/",
@@ -86,6 +92,7 @@
 		]
 	},
 	{"id": "TodoList",
+	"type": "Projets perso",
 	"title": "Todo List",
 	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/todo_list.webp",
 	"link": "https://todo-app-react-by-celine.netlify.app/",
