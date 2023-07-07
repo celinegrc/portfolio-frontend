@@ -87,7 +87,7 @@
 	},
 	{"id": "TodoList",
 	"title": "Todo List",
-	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/todo_list.webp",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/images/todo_list.webp",
 	"link": "https://todo-app-react-by-celine.netlify.app/",
 	"linkText" :"Voir le site",
 	"mission" : "Application de plannification de tâches.",
