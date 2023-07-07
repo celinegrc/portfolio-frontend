@@ -84,5 +84,19 @@
 		"React PDF",
 		"Appel API"
 		]
+	},
+	{"id": "TodoList",
+	"title": "Todo List",
+	"cover": "https://portfolio-frontend-phi-topaz.vercel.app/todo_list.webp",
+	"link": "https://todo-app-react-by-celine.netlify.app/",
+	"linkText" :"Voir le site",
+	"mission" : "Application de plannification de tâches.",
+	"problematic": "Authentification utilisateur afin de récupérer les tâches.",
+	"tags" : [
+		"React",
+		"Node JS",
+		"express JS",
+		"Mongo DB"
+		]
 	}	
 ]
